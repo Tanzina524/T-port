@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Specialist - Red & Black Theme</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#ef4444',
+                            darkRed: '#dc2626',
+                            black: '#0a0a0a',
+                            card: '#121212',
+                            border: '#262626',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+        .text-gradient-red {
+            background: linear-gradient(135deg, #ffffff 0%, #ef4444 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-red {
+            background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+            box-shadow: 0 4px 20px rgba(239, 68, 68, 0.35);
+        }
+        .btn-red:hover {
+            box-shadow: 0 6px 25px rgba(239, 68, 68, 0.55);
+            transform: translateY(-2px);
+        }
+        .border-glow-red:hover {
+            border-color: #ef4444;
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-[#0a0a0a] text-white selection:bg-red-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full top-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-[#262626]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2.5 group">
+                    <div class="w-10 h-10 rounded-xl bg-red-600 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-red-600/30 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <span class="font-extrabold text-xl tracking-wider text-white uppercase">SEO<span class="text-red-500">EXPERT</span></span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 font-semibold text-sm tracking-wide text-slate-300">
+                    <a href="#home" class="hover:text-red-500 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-red-500 transition-colors">About</a>
+                    <a href="#services" class="hover:text-red-500 transition-colors">Services</a>
+                    <a href="#projects" class="hover:text-red-500 transition-colors">Audit Projects</a>
+                    <a href="#contact" class="hover:text-red-500 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="flex items-center gap-4">
+                    <a href="tel:01625054844" class="hidden sm:flex items-center gap-2 px-5 py-2.5 rounded-xl btn-red text-white font-bold text-sm tracking-wide transition-all">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>01625054844</span>
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="menuBtn" class="md:hidden p-2 rounded-lg text-slate-300 hover:text-white">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden border-b border-[#262626] bg-[#121212] px-6 py-6 space-y-4 text-center">
+            <a href="#home" class="block py-2 text-slate-300 font-semibold hover:text-red-500">Home</a>
+            <a href="#about" class="block py-2 text-slate-300 font-semibold hover:text-red-500">About</a>
+            <a href="#services" class="block py-2 text-slate-300 font-semibold hover:text-red-500">Services</a>
+            <a href="#projects" class="block py-2 text-slate-300 font-semibold hover:text-red-500">Audit Projects</a>
+            <a href="#contact" class="block py-2 text-slate-300 font-semibold hover:text-red-500">Contact</a>
+            <a href="tel:01625054844" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl btn-red text-white font-bold">
+                <i class="fa-solid fa-phone"></i>
+                <span>01625054844</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-36 pb-20 md:pt-44 md:pb-32 relative overflow-hidden">
+        <!-- Red Background Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-red-600/15 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="space-y-6 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/30 text-red-500 font-bold text-xs tracking-wider uppercase">
+                        <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                        Organic Traffic Specialist
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                        Dominate Google Rankings With <span class="text-gradient-red">Data-Driven SEO</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
+                        Hello! I am a dedicated **SEO Specialist**. Skilled in contemporary search engine algorithms, technical website health, keyword intent research, and white-hat link strategies.
+                    </p>
+                    
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-4">
+                        <a href="#contact" class="px-7 py-3.5 rounded-xl btn-red text-white font-bold text-sm tracking-wider uppercase transition-all flex items-center gap-2">
+                            <span>Get Free SEO Audit</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://wa.me/8801625054844" target="_blank" class="px-7 py-3.5 rounded-xl border border-[#333] bg-[#121212] hover:bg-emerald-600 hover:border-emerald-600 text-white font-bold text-sm tracking-wider uppercase transition-all flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg text-emerald-400"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Highlights Banner -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-[#262626] text-left">
+                        <div class="p-3 rounded-xl bg-[#121212] border border-[#262626]">
+                            <p class="text-2xl font-black text-red-500">100%</p>
+                            <p class="text-xs text-slate-400 font-medium">White-Hat Methods</p>
+                        </div>
+                        <div class="p-3 rounded-xl bg-[#121212] border border-[#262626]">
+                            <p class="text-2xl font-black text-white">2026</p>
+                            <p class="text-xs text-slate-400 font-medium">Algorithm Ready</p>
+                        </div>
+                        <div class="p-3 rounded-xl bg-[#121212] border border-[#262626]">
+                            <p class="text-2xl font-black text-red-500">24/7</p>
+                            <p class="text-xs text-slate-400 font-medium">Support Line</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Profile / Upload Area -->
+                <div class="flex flex-col items-center justify-center">
+                    <div class="relative group w-72 h-72 sm:w-88 sm:h-88 rounded-3xl p-1.5 bg-gradient-to-b from-red-600 to-red-950 shadow-2xl shadow-red-950/50">
+                        <div class="w-full h-full rounded-[22px] overflow-hidden bg-[#121212] flex items-center justify-center relative border border-red-500/20">
+                            <!-- Default Profile Image -->
+                            <img id="profileImg" src="https://github.com/Tanzina524/T-port" alt="SEO Expert Profile Picture" class="w-full h-full object-cover">
+                            
+                            <!-- Direct Upload Overlay / Button -->
+                            <label for="imageUpload" class="absolute inset-0 bg-black/85 backdrop-blur-sm opacity-90 sm:opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-white cursor-pointer transition-opacity duration-300 p-4 text-center">
+                                <div class="w-14 h-14 rounded-full bg-red-600 hover:bg-red-500 flex items-center justify-center text-white mb-3 shadow-lg shadow-red-600/50 scale-100 hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-cloud-arrow-up text-2xl"></i>
+                                </div>
+                                <span class="text-xs font-black uppercase tracking-wider text-red-400">Apnar Pic Upload Korun</span>
+                                <span class="text-[11px] text-slate-300 mt-1">Ekhane click kore photo select করুন</span>
+                            </label>
+                            <input type="file" id="imageUpload" accept="image/*" class="hidden">
+                        </div>
+
+                        <!-- Badge Overlay -->
+                        <div class="absolute -bottom-6 -right-4 bg-white text-black p-4 rounded-2xl shadow-2xl flex items-center gap-3 border-2 border-red-600">
+                            <div class="w-10 h-10 rounded-xl bg-black text-red-500 flex items-center justify-center font-black">
+                                <i class="fa-solid fa-chart-line text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Search Engine</p>
+                                <p class="text-xs font-black text-black">Organic Growth Expert</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Button below Image -->
+                    <label for="imageUpload" class="mt-10 cursor-pointer inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-red-600/20 border border-red-500 text-red-400 font-bold text-xs uppercase tracking-wider hover:bg-red-600 hover:text-white transition-all">
+                        <i class="fa-solid fa-image"></i>
+                        <span>Upload Custom Photo</span>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- White High-Contrast Section (About) -->
+    <section id="about" class="py-24 bg-white text-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3.5 py-1 rounded-full bg-red-100 text-red-600 font-extrabold text-xs tracking-widest uppercase">Who I Am</span>
+                <h2 class="text-3xl sm:text-5xl font-black mt-3 tracking-tight text-slate-900">Modern SEO Practitioner</h2>
+                <div class="w-20 h-1.5 bg-red-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-5 text-slate-700 leading-relaxed font-medium">
+                    <p class="text-lg font-bold text-slate-900">
+                        Focused on executing clean, sustainable, and high-impact SEO practices for modern web platforms.
+                    </p>
+                    <p>
+                        I specialize in identifying hidden ranking opportunities through comprehensive keyword research, structural technical audits, and content intent alignment.
+                    </p>
+                    <p>
+                        Equipped with fresh, up-to-date knowledge of Search Engine updates, Google Search Console, Ahrefs, SEMrush, Screaming Frog, and CMS optimization (WordPress, Shopify, custom websites).
+                    </p>
+
+                    <div class="pt-4 grid sm:grid-cols-2 gap-4 text-sm font-bold text-slate-900">
+                        <div class="flex items-center gap-3 p-3 bg-slate-100 rounded-xl border-l-4 border-red-600">
+                            <i class="fa-solid fa-check text-red-600"></i> Keyword Intent Mapping
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-slate-100 rounded-xl border-l-4 border-red-600">
+                            <i class="fa-solid fa-check text-red-600"></i> On-Page Content Optimization
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-slate-100 rounded-xl border-l-4 border-red-600">
+                            <i class="fa-solid fa-check text-red-600"></i> Technical Site Speed Audit
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-slate-100 rounded-xl border-l-4 border-red-600">
+                            <i class="fa-solid fa-check text-red-600"></i> Competitor Gap Analysis
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Breakdown -->
+                <div class="bg-slate-950 text-white p-8 sm:p-10 rounded-3xl border-2 border-red-600 shadow-2xl space-y-6">
+                    <h3 class="text-xl font-black uppercase tracking-wider text-red-500 mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-sliders"></i> Key Technical Skills
+                    </h3>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2">
+                            <span>On-Page SEO & Content Structuring</span>
+                            <span class="text-red-500">95%</span>
+                        </div>
+                        <div class="w-full h-3 bg-slate-800 rounded-full overflow-hidden p-0.5">
+                            <div class="h-full bg-red-600 rounded-full w-[95%]"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2">
+                            <span>Keyword & Competitor Analysis</span>
+                            <span class="text-red-500">90%</span>
+                        </div>
+                        <div class="w-full h-3 bg-slate-800 rounded-full overflow-hidden p-0.5">
+                            <div class="h-full bg-red-600 rounded-full w-[90%]"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2">
+                            <span>Technical Audit & Core Web Vitals</span>
+                            <span class="text-red-500">85%</span>
+                        </div>
+                        <div class="w-full h-3 bg-slate-800 rounded-full overflow-hidden p-0.5">
+                            <div class="h-full bg-red-600 rounded-full w-[85%]"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2">
+                            <span>Off-Page & White-Hat Link Building</span>
+                            <span class="text-red-500">80%</span>
+                        </div>
+                        <div class="w-full h-3 bg-slate-800 rounded-full overflow-hidden p-0.5">
+                            <div class="h-full bg-red-600 rounded-full w-[80%]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-red-500">Solutions Offered</span>
+                <h2 class="text-3xl sm:text-5xl font-black mt-2">Comprehensive SEO Services</h2>
+                <div class="w-20 h-1 rounded-full bg-red-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-[#121212] p-8 rounded-3xl border border-[#262626] border-glow-red transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-red-600/10 border border-red-500/30 text-red-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-red-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-magnifying-glass font-black"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">On-Page SEO</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Complete optimization of Title Tags, Meta Descriptions, Headings (H1-H6), Internal Links, and URL structures for maximum keyword relevance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-[#121212] p-8 rounded-3xl border border-[#262626] border-glow-red transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-red-600/10 border border-red-500/30 text-red-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-red-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Technical SEO</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Resolving canonical issues, robots.txt errors, XML sitemaps, indexability bugs, and optimizing page load speed for better ranking potential.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-[#121212] p-8 rounded-3xl border border-[#262626] border-glow-red transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-red-600/10 border border-red-500/30 text-red-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-red-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Keyword Strategy</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Discovering profitable, low-competition, high-converting long-tail keywords matching direct transactional and informational search intent.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-[#121212] p-8 rounded-3xl border border-[#262626] border-glow-red transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-red-600/10 border border-red-500/30 text-red-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-red-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Backlink Outreach</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Safe and ethical guest post outreach, niche edit opportunities, and high-authority directory placements to elevate Domain Authority.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Projects & Audits -->
+    <section id="projects" class="py-24 bg-[#121212] border-y border-[#262626]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-red-500">Case Studies</span>
+                <h2 class="text-3xl sm:text-5xl font-black mt-2">Practice SEO Audits</h2>
+                <div class="w-20 h-1 rounded-full bg-red-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Case 1 -->
+                <div class="bg-[#0a0a0a] rounded-3xl border border-[#262626] overflow-hidden p-8 flex flex-col justify-between space-y-6">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="px-3 py-1 rounded-full bg-red-600/20 text-red-400 text-xs font-bold uppercase">E-Commerce</span>
+                            <i class="fa-solid fa-check-circle text-red-500"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">E-Commerce Store Technical Audit</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Executed a full technical audit on a demo shop site with 120+ pages. Identified indexing blocks and fixed duplicate product tags.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-300 space-y-2 border-t border-[#262626] pt-4 font-medium">
+                        <li><i class="fa-solid fa-arrow-right text-red-500 mr-2"></i> Fixed 40+ broken internal links</li>
+                        <li><i class="fa-solid fa-arrow-right text-red-500 mr-2"></i> Core Web Vitals score improved</li>
+                    </ul>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="bg-[#0a0a0a] rounded-3xl border border-[#262626] overflow-hidden p-8 flex flex-col justify-between space-y-6">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="px-3 py-1 rounded-full bg-red-600/20 text-red-400 text-xs font-bold uppercase">Local Business</span>
+                            <i class="fa-solid fa-check-circle text-red-500"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Local SEO Citation Blueprint</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Configured complete NAP consistency, Google Business Profile schema markup, and geo-targeted keywords for service pages.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-300 space-y-2 border-t border-[#262626] pt-4 font-medium">
+                        <li><i class="fa-solid fa-arrow-right text-red-500 mr-2"></i> Local Schema integration</li>
+                        <li><i class="fa-solid fa-arrow-right text-red-500 mr-2"></i> Geo-targeted keyword strategy</li>
+                    </ul>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="bg-[#0a0a0a] rounded-3xl border border-[#262626] overflow-hidden p-8 flex flex-col justify-between space-y-6">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="px-3 py-1 rounded-full bg-red-600/20 text-red-400 text-xs font-bold uppercase">Content Blog</span>
+                            <i class="fa-solid fa-check-circle text-red-500"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Low KD Keyword Research Map</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Researched 50+ low difficulty keywords with high intent for a niche blog, creating a structured 30-day topical map.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-300 space-y-2 border-t border-[#262626] pt-4 font-medium">
+                        <li><i class="fa-solid fa-arrow-right text-red-500 mr-2"></i> Topic cluster layout</li>
+                        <li><i class="fa-solid fa-arrow-right text-red-500 mr-2"></i> Search intent grouping</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-red-500">Direct Contact</span>
+                <h2 class="text-3xl sm:text-5xl font-black mt-2">Let's Rank Your Website</h2>
+                <p class="text-slate-400 mt-3 text-sm">Ami apnar website er SEO rank and organic traffic barate full setup ready rakhbo!</p>
+                <div class="w-20 h-1 rounded-full bg-red-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-10">
+                
+                <!-- Contact Direct Cards -->
+                <div class="space-y-6">
+                    <!-- Phone -->
+                    <div class="p-6 rounded-3xl bg-[#121212] border border-[#262626] flex items-center gap-5">
+                        <div class="w-14 h-14 rounded-2xl bg-red-600 text-white flex items-center justify-center text-2xl shrink-0 shadow-lg shadow-red-600/30">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-bold uppercase tracking-wider">Direct Call</p>
+                            <a href="tel:01625054844" class="text-xl font-extrabold hover:text-red-500 transition-colors">01625054844</a>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="p-6 rounded-3xl bg-[#121212] border border-[#262626] flex items-center gap-5">
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-2xl shrink-0 shadow-lg shadow-emerald-600/30">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-bold uppercase tracking-wider">WhatsApp Chat</p>
+                            <a href="https://wa.me/8801625054844" target="_blank" class="text-xl font-extrabold text-emerald-400 hover:underline">+880 1625-054844</a>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="p-6 rounded-3xl bg-[#121212] border border-[#262626] flex items-center gap-5">
+                        <div class="w-14 h-14 rounded-2xl bg-[#262626] text-white flex items-center justify-center text-2xl shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-bold uppercase tracking-wider">Email Inquiry</p>
+                            <a href="mailto:seo.contact@example.com" class="text-sm font-bold text-slate-200 hover:text-red-500">seo.contact@example.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="lg:col-span-2 bg-[#121212] p-8 sm:p-10 rounded-3xl border border-[#262626]">
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Your Name</label>
+                                <input type="text" required placeholder="Apnar Naam" class="w-full px-4 py-3.5 rounded-xl border border-[#262626] bg-[#0a0a0a] text-white focus:outline-none focus:border-red-600 text-sm transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Phone / Email</label>
+                                <input type="text" required placeholder="017xxxxxxxx" class="w-full px-4 py-3.5 rounded-xl border border-[#262626] bg-[#0a0a0a] text-white focus:outline-none focus:border-red-600 text-sm transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Select Service</label>
+                            <select class="w-full px-4 py-3.5 rounded-xl border border-[#262626] bg-[#0a0a0a] text-white focus:outline-none focus:border-red-600 text-sm transition-colors">
+                                <option>Free Website SEO Audit</option>
+                                <option>On-Page SEO Optimization</option>
+                                <option>Keyword Strategy & Mapping</option>
+                                <option>Technical SEO Audit</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Website URL / Project Goal</label>
+                            <textarea rows="4" required placeholder="Apnar website URL ebam goal bistharitho likhun..." class="w-full px-4 py-3.5 rounded-xl border border-[#262626] bg-[#0a0a0a] text-white focus:outline-none focus:border-red-600 text-sm transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl btn-red text-white font-black uppercase tracking-wider text-sm transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Send Request
+                        </button>
+                        
+                        <div id="formStatus" class="hidden p-4 rounded-xl text-center text-sm font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-[#262626] py-10 bg-black text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 SEO Expert. Designed in High-Contrast Red & Black.</p>
+            <div class="flex items-center gap-6 text-sm">
+                <a href="tel:01625054844" class="hover:text-red-500 transition-colors"><i class="fa-solid fa-phone mr-1"></i> 01625054844</a>
+                <a href="https://wa.me/8801625054844" target="_blank" class="hover:text-emerald-400 transition-colors"><i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JS Logic -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // Image Upload Feature
+        const imageUpload = document.getElementById('imageUpload');
+        const profileImg = document.getElementById('profileImg');
+
+        imageUpload.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    profileImg.src = event.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Form Submission Feedback
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('formStatus');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            formStatus.classList.remove('hidden');
+            formStatus.textContent = 'Dhonnobad! Apnar message safolbhabe pathano hoyeche. Khub sighroi apnar sathe jogajog kora hobe.';
+            contactForm.reset();
+
+            setTimeout(() => {
+                formStatus.classList.add('hidden');
+            }, 6000);
+        });
+    </script>
+</body>
+</html>
